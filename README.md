@@ -1,6 +1,6 @@
 # Awesome-Computational-Photography-Film-Simulation
 
-## Top Component Libraries & Modern UI Design Ecosystem
+### Top Component Libraries & Modern UI Design Ecosystem
 
 
 
@@ -251,127 +251,250 @@ If you find this curated list helpful, consider supporting the project:
 Let's make modern web UI design and component engineering more open, accessible, and composable.
 # Awesome-Computational-Photography-Film-Simulation
 
-markdown
-# Top Computational Photography & Film Simulation Ecosystem
-
-**Curated List of SaaS/Hosted & Commercial Platforms & Open-Source GitHub Projects**  
-*Focused on Analog Film Emulation, 3D LUT Color Grading, RAW Image Processing, Halation/Film-Grain Synthesis & Computational Photography Pipelines*  
-**Last updated: November 2026**
-
-This repository tracks notable **SaaS/hosted & commercial platforms** and **open-source projects** for **Computational Photography & Film Simulation**. These tools emulate classic analog film stocks (Kodak, Fujifilm, Ilford, CineStill), apply 3D LUT color transforms, simulate optical halation and silver-halide grain, and process RAW photography across cloud photo editors, desktop RAW workflows, mobile camera apps, and programmatic color-science pipelines.
-
-**Examples** include VSCO, Adobe Lightroom, Exposure Software (Exposure X7), Dehancer, FilmConvert, RNI All Films, Capture One, DxO FilmPack, Nik Collection, and hngseries/mfilm-canon-film-simulation (the category leaders and popular runtimes). 
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for analog film simulation & camera-specific film recipes (`hngseries/mfilm-canon-film-simulation`, `Filmulator`, `Darktable`, `RawTherapee`, `ART`), 3D LUT & HaldCLUT film-emulation libraries (`G'MIC`, `Colour Science for Python`, `OpenColorIO`), and computational photography & RAW HDR pipelines (`HDRMerge`, `Hugin`, `OpenCamera`) — ideal for photographers, colorists, cinematographers, and computational imaging developers.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Support & Share](#support--share)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[VSCO (VSCO Studio & Cloud)](https://vsco.co)**  
-  Mobile and web computational photography platform renowned for authentic analog film presets (Kodak Portra, Fuji Pro 400H, Ilford HP5), film grain, and RAW mobile editing.
-
-- **[Adobe Lightroom (Cloud & Desktop)](https://adobe.com)**  
-  Cloud-synced RAW photo editing and color grading ecosystem featuring adaptive AI masking, custom camera profiles, and massive third-party film LUT preset support.
-
-- **[Dehancer (Photo & Film Plugin Suite)](https://dehancer.com)**  
-  Physics-inspired analog film emulation suite modeling real photochemical film profiles, optical halation, bloom, film grain, and print paper stocks for photo and video.
-
-- **[DxO FilmPack](https://dxo.com)**  
-  Laboratory-profiled analog film simulation software recreating over 80 iconic color and black-and-white film stocks using spectral grain and micro-contrast measurements.
-
-- **[Capture One (Cloud & Studio)](https://captureone.com)**  
-  Professional tethered shooting, RAW color-grading, and cloud collaboration platform prized for custom ICC camera color profiles, color wheels, and film-style curves.
-
-- **[FilmConvert (Nitrate & Cinematch)](https://filmconvert.com)**  
-  Camera-profiled film stock emulation software matching digital sensor response curves to classic motion-picture and still film stocks with customizable grain sizes.
-
-- **[Exposure X7 (Exposure Software)](https://exposure.software)**  
-  Non-destructive RAW photo editor and analog film simulator featuring hundreds of curated film presets, light leaks, dust/scratch textures, and darkroom tonal tools.
-
-- **[Nik Collection (Analog Efex Pro & Silver Efex Pro)](https://dxo.com)**  
-  Classic creative photography plugin suite specializing in vintage camera optics, wet-plate collodion simulation, and fine-art black-and-white silver-halide emulation.
-
-- **[RNI All Films (Really Nice Images)](https://reallyniceimages.com)**  
-  Precision-crafted analog film profiles and LUT packs built from real negative/slide film scans for Lightroom, Capture One, and iOS.
-
-
-## Open-Source GitHub Projects
-
-- **[hngseries/mfilm-canon-film-simulation](https://github.com)**  
-  Open-source Canon film simulation project engineered to bring authentic analog film looks, custom Picture Styles, and classic film color rendering to Canon cameras and workflows.
-
-- **[Darktable (`darktable-org/darktable`)](https://github.com)**  
-  Flagship open-source photography workflow application and scene-referred RAW developer featuring 3D LUTs (`lut3d`), `agx`/`filmic rgb` tone mapping, color balance RGB, and grain modules.
-
-- **[RawTherapee (`Beep6581/RawTherapee`)](https://github.com)**  
-  High-precision cross-platform open-source RAW photo processor featuring built-in HaldCLUT Film Simulation support, CIECAM02 color appearance modeling, and advanced wavelet sharpening.
-
-- **[ART — Another RawTherapee (`artpixls/ART`)](https://github.com)**  
-  Streamlined, modern open-source RAW image processor forked from RawTherapee with fast local editing masks, CTL (Color Transformation Language) scripts, and HaldCLUT film emulation.
-
-- **[Filmulator (`CarVac/filmulator-gui`)](https://github.com)**  
-  Unique open-source RAW photo editor that mathematically simulates the chemical development process of silver-halide film—producing natural highlight roll-off and local micro-contrast.
-
-- **[G'MIC (`GreycLab/gmic`)](https://github.com)**  
-  Comprehensive open-source image processing framework bundling over 300 open-source HaldCLUT analog film emulations (Fuji, Kodak, Agfa, Polaroid, Ilford) usable in GIMP, Krita, and CLI.
-
-- **[OpenColorIO (`AcademySoftwareFoundation/OpenColorIO`)](https://github.com)**  
-  Industry-standard open-source color management framework from the Academy Software Foundation powering filmic tone-mapping (ACES, AgX) and 3D LUT pipelines across VFX and photography.
-
-- **[Colour Science for Python (`colour-science/colour`)](https://github.com)**  
-  Extensive open-source Python library for computational color science, spectral film-curve modeling, H&D density curves, color space conversions, and 3D LUT generation.
-
-- **[HaldCLUT Film Simulation Packs (`pixlsus` / `clut` community repositories)](https://github.com)**  
-  Community-curated open-source HaldCLUT PNG and `.cube` 3D LUT collections emulating Fujifilm (Classic Chrome, Velvia, Provia, Acros) and Kodak (Portra, Gold, Tri-X) stocks.
-
-- **[HDRMerge (`jcelaya/hdrmerge`)](https://github.com)**  
-  Open-source computational photography tool that fuses multiple bracketed RAW exposures into a single high-dynamic-range DNG file with ghost removal before film-style grading.
-
-- **[OpenCamera (`almalence/OpenCamera` / Mark Harman's Open Camera)](https://sourceforge.net)**  
-  Popular open-source Android camera application supporting manual exposure, RAW DNG capture, exposure bracketing, and custom color/LUT post-processing workflows.
-
-### Additional Strong Open-Source Options
-
-- **[digiKam (`KDE/digikam`)](https://github.com)** for a full-featured open-source digital asset management (DAM) and RAW photo editing suite with built-in B&W film curves and color effects.
-- **[RapidRAW (`CyberTimon/RapidRAW`)](https://github.com)** for a fast, modern, GPU-accelerated open-source RAW image editor built in Rust and TypeScript with LUT and film-grade presets.
-- **[libraw (`LibRaw/LibRaw`)](https://github.com)** and **[Lensfun (`lensfun/lensfun`)](https://github.com)** for foundational open-source RAW sensor decoding and optical lens distortion/vignetting correction databases.
-- **[Hugin (`hugin` / Panorama Tools)](https://sourceforge.io)** for open-source computational panorama stitching, HDR exposure fusion (`enfuse`), and perspective correction.
-- **[AgX & Filmic Blender / Display Transforms (`sobotka/AgX`)](https://github.com)** for open-source film-like highlight desaturation and natural spectral tone-mapping transforms.
-
-**Frameworks for building custom systems**: Combine **Darktable** or **RawTherapee + G'MIC HaldCLUTs** for a complete open-source analog film workflow, **hngseries/mfilm-canon-film-simulation** for in-camera film looks, and **Colour Science for Python + OpenColorIO** for custom spectral film-stock simulation research.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Support & Share
-
-If you find this curated list helpful, consider supporting the project:
-
-- ⭐ **Star this repository** to help others discover it.
-- 🍴 **Fork & Share** it with your team, friends, or community on X/Twitter, LinkedIn, and Reddit.
-- ☕ **Buy me a coffee / Sponsor** my open-source work on [GitHub Sponsors](https://github.com) — featuring tiers for profile badges, README shoutouts, logo placements, and prioritized bug fixes/features!
-
-[![Sponsor @ishandutta2007](https://shields.io)](https://github.com)
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Note that `Exposure Software` and `Exposure X7` refer to the same commercial product line; all trademarks for analog film stocks (such as Kodak, Fujifilm, Ilford, and CineStill) belong to their respective owners.
-Use code with caution.
-• Always shoot in lossless RAW (.CR3, .ARW, .NEF, .RAF, .DNG) when applying heavy film simulations or 3D LUTs to preserve highlight latitude and prevent 8-bit color banding.
-Made for photographers, colorists, cinematographers, computational imaging researchers, and open-source contributors.
+markdown
+
+## Top Computational Photography & Film Simulation Ecosystem
+
+
+
+**Curated List of SaaS/Hosted & Commercial Platforms & Open-Source GitHub Projects**  
+
+*Focused on Analog Film Emulation, 3D LUT Color Grading, RAW Image Processing, Halation/Film-Grain Synthesis & Computational Photography Pipelines*  
+
+**Last updated: November 2026**
+
+
+
+This repository tracks notable **SaaS/hosted & commercial platforms** and **open-source projects** for **Computational Photography & Film Simulation**. These tools emulate classic analog film stocks (Kodak, Fujifilm, Ilford, CineStill), apply 3D LUT color transforms, simulate optical halation and silver-halide grain, and process RAW photography across cloud photo editors, desktop RAW workflows, mobile camera apps, and programmatic color-science pipelines.
+
+
+
+**Examples** include VSCO, Adobe Lightroom, Exposure Software (Exposure X7), Dehancer, FilmConvert, RNI All Films, Capture One, DxO FilmPack, Nik Collection, and hngseries/mfilm-canon-film-simulation (the category leaders and popular runtimes). 
+
+
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for analog film simulation & camera-specific film recipes (`hngseries/mfilm-canon-film-simulation`, `Filmulator`, `Darktable`, `RawTherapee`, `ART`), 3D LUT & HaldCLUT film-emulation libraries (`G'MIC`, `Colour Science for Python`, `OpenColorIO`), and computational photography & RAW HDR pipelines (`HDRMerge`, `Hugin`, `OpenCamera`) — ideal for photographers, colorists, cinematographers, and computational imaging developers.
+
+
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+
+
+## Table of Contents
+
+- [SaaS/Hosted Platforms](#saashosted-platforms)
+
+- [Open-Source GitHub Projects](#open-source-github-projects)
+
+- [How to Contribute](#how-to-contribute)
+
+- [Support & Share](#support--share)
+
+- [Disclaimer](#disclaimer)
+
+
+
+## SaaS/Hosted Platforms
+
+
+
+- **[VSCO (VSCO Studio & Cloud)](https://vsco.co)**  
+
+  Mobile and web computational photography platform renowned for authentic analog film presets (Kodak Portra, Fuji Pro 400H, Ilford HP5), film grain, and RAW mobile editing.
+
+
+
+- **[Adobe Lightroom (Cloud & Desktop)](https://adobe.com)**  
+
+  Cloud-synced RAW photo editing and color grading ecosystem featuring adaptive AI masking, custom camera profiles, and massive third-party film LUT preset support.
+
+
+
+- **[Dehancer (Photo & Film Plugin Suite)](https://dehancer.com)**  
+
+  Physics-inspired analog film emulation suite modeling real photochemical film profiles, optical halation, bloom, film grain, and print paper stocks for photo and video.
+
+
+
+- **[DxO FilmPack](https://dxo.com)**  
+
+  Laboratory-profiled analog film simulation software recreating over 80 iconic color and black-and-white film stocks using spectral grain and micro-contrast measurements.
+
+
+
+- **[Capture One (Cloud & Studio)](https://captureone.com)**  
+
+  Professional tethered shooting, RAW color-grading, and cloud collaboration platform prized for custom ICC camera color profiles, color wheels, and film-style curves.
+
+
+
+- **[FilmConvert (Nitrate & Cinematch)](https://filmconvert.com)**  
+
+  Camera-profiled film stock emulation software matching digital sensor response curves to classic motion-picture and still film stocks with customizable grain sizes.
+
+
+
+- **[Exposure X7 (Exposure Software)](https://exposure.software)**  
+
+  Non-destructive RAW photo editor and analog film simulator featuring hundreds of curated film presets, light leaks, dust/scratch textures, and darkroom tonal tools.
+
+
+
+- **[Nik Collection (Analog Efex Pro & Silver Efex Pro)](https://dxo.com)**  
+
+  Classic creative photography plugin suite specializing in vintage camera optics, wet-plate collodion simulation, and fine-art black-and-white silver-halide emulation.
+
+
+
+- **[RNI All Films (Really Nice Images)](https://reallyniceimages.com)**  
+
+  Precision-crafted analog film profiles and LUT packs built from real negative/slide film scans for Lightroom, Capture One, and iOS.
+
+
+
+
+
+## Open-Source GitHub Projects
+
+
+
+- **[hngseries/mfilm-canon-film-simulation](https://github.com)**  
+
+  Open-source Canon film simulation project engineered to bring authentic analog film looks, custom Picture Styles, and classic film color rendering to Canon cameras and workflows.
+
+
+
+- **[Darktable (`darktable-org/darktable`)](https://github.com)**  
+
+  Flagship open-source photography workflow application and scene-referred RAW developer featuring 3D LUTs (`lut3d`), `agx`/`filmic rgb` tone mapping, color balance RGB, and grain modules.
+
+
+
+- **[RawTherapee (`Beep6581/RawTherapee`)](https://github.com)**  
+
+  High-precision cross-platform open-source RAW photo processor featuring built-in HaldCLUT Film Simulation support, CIECAM02 color appearance modeling, and advanced wavelet sharpening.
+
+
+
+- **[ART — Another RawTherapee (`artpixls/ART`)](https://github.com)**  
+
+  Streamlined, modern open-source RAW image processor forked from RawTherapee with fast local editing masks, CTL (Color Transformation Language) scripts, and HaldCLUT film emulation.
+
+
+
+- **[Filmulator (`CarVac/filmulator-gui`)](https://github.com)**  
+
+  Unique open-source RAW photo editor that mathematically simulates the chemical development process of silver-halide film—producing natural highlight roll-off and local micro-contrast.
+
+
+
+- **[G'MIC (`GreycLab/gmic`)](https://github.com)**  
+
+  Comprehensive open-source image processing framework bundling over 300 open-source HaldCLUT analog film emulations (Fuji, Kodak, Agfa, Polaroid, Ilford) usable in GIMP, Krita, and CLI.
+
+
+
+- **[OpenColorIO (`AcademySoftwareFoundation/OpenColorIO`)](https://github.com)**  
+
+  Industry-standard open-source color management framework from the Academy Software Foundation powering filmic tone-mapping (ACES, AgX) and 3D LUT pipelines across VFX and photography.
+
+
+
+- **[Colour Science for Python (`colour-science/colour`)](https://github.com)**  
+
+  Extensive open-source Python library for computational color science, spectral film-curve modeling, H&D density curves, color space conversions, and 3D LUT generation.
+
+
+
+- **[HaldCLUT Film Simulation Packs (`pixlsus` / `clut` community repositories)](https://github.com)**  
+
+  Community-curated open-source HaldCLUT PNG and `.cube` 3D LUT collections emulating Fujifilm (Classic Chrome, Velvia, Provia, Acros) and Kodak (Portra, Gold, Tri-X) stocks.
+
+
+
+- **[HDRMerge (`jcelaya/hdrmerge`)](https://github.com)**  
+
+  Open-source computational photography tool that fuses multiple bracketed RAW exposures into a single high-dynamic-range DNG file with ghost removal before film-style grading.
+
+
+
+- **[OpenCamera (`almalence/OpenCamera` / Mark Harman's Open Camera)](https://sourceforge.net)**  
+
+  Popular open-source Android camera application supporting manual exposure, RAW DNG capture, exposure bracketing, and custom color/LUT post-processing workflows.
+
+
+
+### Additional Strong Open-Source Options
+
+
+
+- **[digiKam (`KDE/digikam`)](https://github.com)** for a full-featured open-source digital asset management (DAM) and RAW photo editing suite with built-in B&W film curves and color effects.
+
+- **[RapidRAW (`CyberTimon/RapidRAW`)](https://github.com)** for a fast, modern, GPU-accelerated open-source RAW image editor built in Rust and TypeScript with LUT and film-grade presets.
+
+- **[libraw (`LibRaw/LibRaw`)](https://github.com)** and **[Lensfun (`lensfun/lensfun`)](https://github.com)** for foundational open-source RAW sensor decoding and optical lens distortion/vignetting correction databases.
+
+- **[Hugin (`hugin` / Panorama Tools)](https://sourceforge.io)** for open-source computational panorama stitching, HDR exposure fusion (`enfuse`), and perspective correction.
+
+- **[AgX & Filmic Blender / Display Transforms (`sobotka/AgX`)](https://github.com)** for open-source film-like highlight desaturation and natural spectral tone-mapping transforms.
+
+
+
+**Frameworks for building custom systems**: Combine **Darktable** or **RawTherapee + G'MIC HaldCLUTs** for a complete open-source analog film workflow, **hngseries/mfilm-canon-film-simulation** for in-camera film looks, and **Colour Science for Python + OpenColorIO** for custom spectral film-stock simulation research.
+
+
+
+## How to Contribute
+
+
+
+1. Fork the repo.
+
+2. Add/edit entries in `README.md` (follow existing format).
+
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
+
+4. Submit PR with a short explanation.
+
+
+
+Star the repo if you find it useful!
+
+
+
+## Support & Share
+
+
+
+If you find this curated list helpful, consider supporting the project:
+
+
+
+- ⭐ **Star this repository** to help others discover it.
+
+- 🍴 **Fork & Share** it with your team, friends, or community on X/Twitter, LinkedIn, and Reddit.
+
+- ☕ **Buy me a coffee / Sponsor** my open-source work on [GitHub Sponsors](https://github.com) — featuring tiers for profile badges, README shoutouts, logo placements, and prioritized bug fixes/features!
+
+
+
+[![Sponsor @ishandutta2007](https://shields.io)](https://github.com)
+
+
+
+## Disclaimer
+
+
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+
+- Note that `Exposure Software` and `Exposure X7` refer to the same commercial product line; all trademarks for analog film stocks (such as Kodak, Fujifilm, Ilford, and CineStill) belong to their respective owners.
+
+Use code with caution.
+
+• Always shoot in lossless RAW (.CR3, .ARW, .NEF, .RAF, .DNG) when applying heavy film simulations or 3D LUTs to preserve highlight latitude and prevent 8-bit color banding.
+
+Made for photographers, colorists, cinematographers, computational imaging researchers, and open-source contributors.
+
 Let's make computational photography and analog film simulation more open, accurate, and accessible.
